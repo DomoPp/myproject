@@ -2,6 +2,7 @@ import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { MenuItems } from '../../../shared/menu-items/menu-items';
 import { Lesson } from '../../../shared/menu-items/menu-lesson';
+import { WorkShop } from '../../../shared/menu-items/menu-workshop';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -19,6 +20,7 @@ export class AppSidebarComponent implements OnDestroy {
     media: MediaMatcher,
     public menuItems: MenuItems,
     public Lesson: Lesson,
+    public WorkShop: WorkShop,
   ) {
     this.mobileQuery = media.matchMedia('(min-width: 768px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();

@@ -59,28 +59,32 @@
                         <mat-expansion-panel-header>
                             <mat-panel-title> {{Lesson.name}} </mat-panel-title>
                         </mat-expansion-panel-header>
-                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.directionstate]" *ngIf="Lesson.directiontype === 'link'">
+                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.directionstate]"
+                            *ngIf="Lesson.directiontype === 'link'">
                             <mat-icon>{{ Lesson.directionicon }}</mat-icon>
                             <span>{{ Lesson.directionname }}</span>
                             <span fxFlex></span>
                             <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
                                 }}</span>
                         </a>
-                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.prestate]" *ngIf="Lesson.pretype === 'link'">
+                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.prestate]"
+                            *ngIf="Lesson.pretype === 'link'">
                             <mat-icon>{{ Lesson.preicon }}</mat-icon>
                             <span>{{ Lesson.prename }}</span>
                             <span fxFlex></span>
                             <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
                                 }}</span>
                         </a>
-                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.state]" *ngIf="Lesson.type === 'link'">
+                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.state]"
+                            *ngIf="Lesson.type === 'link'">
                             <mat-icon>{{ Lesson.icon }}</mat-icon>
                             <span>{{ Lesson.name }}</span>
                             <span fxFlex></span>
                             <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
                                 }}</span>
                         </a>
-                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.posstate]" *ngIf="Lesson.postype === 'link'">
+                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.posstate]"
+                            *ngIf="Lesson.postype === 'link'">
                             <mat-icon>{{ Lesson.posicon }}</mat-icon>
                             <span>{{ Lesson.posname }}</span>
                             <span fxFlex></span>
@@ -97,48 +101,74 @@
 </mat-nav-list>
 
 <mat-nav-list *ngIf="check == 3" appAccordion>
-            <mat-list-item appAccordionLink routerLinkActive="selected">
-                <a class="" appAccordionToggle [routerLink]="['/', 'dashboard']" *ngIf="'link' === 'link'">
-                    <mat-icon>{{ 'description' }}</mat-icon>
-                    <span>{{ 'Description' }}</span>
+    <mat-list-item appAccordionLink routerLinkActive="selected">
+        <a class="" appAccordionToggle [routerLink]="['/', 'dashboard']" *ngIf="'link' === 'link'">
+            <mat-icon>{{ 'description' }}</mat-icon>
+            <span>{{ 'Description' }}</span>
+            <span fxFlex></span>
+        </a>
+    </mat-list-item>
+    <mat-list-item appAccordionLink *ngFor="let Lesson of Lesson.getLesson()" group="{{Lesson.state}}">
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title> {{Lesson.name}} </mat-panel-title>
+                </mat-expansion-panel-header>
+                <a class="" appAccordionToggle [routerLink]="['/', Lesson.directionstate]"
+                    *ngIf="Lesson.directiontype === 'link'">
+                    <mat-icon>{{ Lesson.directionicon }}</mat-icon>
+                    <span>{{ Lesson.directionname }}</span>
                     <span fxFlex></span>
+                    <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
+                        }}</span>
+                </a>
+                <a class="" appAccordionToggle [routerLink]="['/', Lesson.prestate]" *ngIf="Lesson.pretype === 'link'">
+                    <mat-icon>{{ Lesson.preicon }}</mat-icon>
+                    <span>{{ Lesson.prename }}</span>
+                    <span fxFlex></span>
+                    <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
+                        }}</span>
+                </a>
+                <a class="" appAccordionToggle [routerLink]="['/', Lesson.state]" *ngIf="Lesson.type === 'link'">
+                    <mat-icon>{{ Lesson.icon }}</mat-icon>
+                    <span>{{ Lesson.name }}</span>
+                    <span fxFlex></span>
+                    <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
+                        }}</span>
+                </a>
+                <a class="" appAccordionToggle [routerLink]="['/', Lesson.posstate]" *ngIf="Lesson.postype === 'link'">
+                    <mat-icon>{{ Lesson.posicon }}</mat-icon>
+                    <span>{{ Lesson.posname }}</span>
+                    <span fxFlex></span>
+                    <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
+                        }}</span>
+                </a>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-list-item>
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title> WorkShop </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-list-item appAccordionLink *ngFor="let WorkShop of WorkShop.getWorkShop()" routerLinkActive="selected"
+                group="{{WorkShop.state}}">
+                <a class="" appAccordionToggle [routerLink]="['/', WorkShop.state]" *ngIf="WorkShop.type === 'link'">
+                    <mat-icon>{{ WorkShop.icon }}</mat-icon>
+                    <span>{{ WorkShop.name }}</span>
+                    <span fxFlex></span>
+                    <span class="label label-{{ badge.type }}" *ngFor="let badge of WorkShop.badge">{{ badge.value
+                        }}</span>
                 </a>
             </mat-list-item>
-            <mat-list-item appAccordionLink *ngFor="let Lesson of Lesson.getLesson()" group="{{Lesson.state}}">
-                <mat-accordion>
-                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-                        <mat-expansion-panel-header>
-                            <mat-panel-title> {{Lesson.name}} </mat-panel-title>
-                        </mat-expansion-panel-header>
-                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.directionstate]" *ngIf="Lesson.directiontype === 'link'">
-                            <mat-icon>{{ Lesson.directionicon }}</mat-icon>
-                            <span>{{ Lesson.directionname }}</span>
-                            <span fxFlex></span>
-                            <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
-                                }}</span>
-                        </a>
-                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.prestate]" *ngIf="Lesson.pretype === 'link'">
-                            <mat-icon>{{ Lesson.preicon }}</mat-icon>
-                            <span>{{ Lesson.prename }}</span>
-                            <span fxFlex></span>
-                            <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
-                                }}</span>
-                        </a>
-                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.state]" *ngIf="Lesson.type === 'link'">
-                            <mat-icon>{{ Lesson.icon }}</mat-icon>
-                            <span>{{ Lesson.name }}</span>
-                            <span fxFlex></span>
-                            <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
-                                }}</span>
-                        </a>
-                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.posstate]" *ngIf="Lesson.postype === 'link'">
-                            <mat-icon>{{ Lesson.posicon }}</mat-icon>
-                            <span>{{ Lesson.posname }}</span>
-                            <span fxFlex></span>
-                            <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
-                                }}</span>
-                        </a>
-                    </mat-expansion-panel>
-                </mat-accordion>
-            </mat-list-item>
+        </mat-expansion-panel>
+    </mat-accordion>
+    <mat-list-item appAccordionLink>
+        <a class="" appAccordionToggle [routerLink]="['/', 'about']" *ngIf="'link' === 'link'">
+            <mat-icon>{{ 'support_agent' }}</mat-icon>
+            <span>{{ 'About' }}</span>
+            <span fxFlex></span>
+        </a>
+    </mat-list-item>
 </mat-nav-list>
