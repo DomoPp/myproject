@@ -1,0 +1,144 @@
+<!-- ============================================================== -->
+<!-- sidebar -->
+<!-- ============================================================== -->
+
+<div class="user-profile" style="background: url(assets/images/background/user-info.jpg) no-repeat;">
+    <!-- User profile image -->
+    <div class="profile-img"> <img src="assets/images/users/profile.png" alt="user"> </div>
+    <!-- User profile text -->
+    <!-- ============================================================== -->
+    <!-- Profile - style you can find in header.scss -->
+    <!-- ============================================================== -->
+    <div class="profile-text"><a [matMenuTriggerFor]="sdprofile" class=""> Markarn Doe <i
+                class="ti-angle-down font-12 m-l-5"></i></a></div>
+
+    <mat-menu #sdprofile="matMenu" class="mymegamenu">
+        <button mat-menu-item (click)="clickOne()">
+            <mat-icon>settings</mat-icon> ONE
+        </button>
+        <button mat-menu-item (click)="clickTow()">
+            <mat-icon>account_box</mat-icon> TOW
+        </button>
+        <button mat-menu-item (click)="clickThree()">
+            <mat-icon>notifications_off</mat-icon> Three
+        </button>
+        <button mat-menu-item>
+            <mat-icon>exit_to_app</mat-icon> Sign Out
+        </button>
+    </mat-menu>
+
+</div>
+<mat-nav-list *ngIf="check == 1" appAccordion>
+    <mat-list-item appAccordionLink *ngFor="let menuitem of menuItems.getMenuitem()" routerLinkActive="selected"
+        group="{{menuitem.state}}">
+        <a class="" appAccordionToggle [routerLink]="['/', menuitem.state]" *ngIf="menuitem.type === 'link'">
+            <mat-icon>{{ menuitem.icon }}</mat-icon>
+            <span>{{ menuitem.name }}</span>
+            <span fxFlex></span>
+            <span class="label label-{{ badge.type }}" *ngFor="let badge of menuitem.badge">{{ badge.value }}</span>
+        </a>
+
+
+    </mat-list-item>
+</mat-nav-list>
+
+<mat-nav-list *ngIf="check == 2" appAccordion>
+
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title> Lesson </mat-panel-title>
+                <!-- <mat-panel-description> Currently I am {{panelOpenState ? 'open' : 'closed'}} </mat-panel-description> -->
+            </mat-expansion-panel-header>
+
+
+            <mat-list-item appAccordionLink *ngFor="let Lesson of Lesson.getLesson()" routerLinkActive="selected"
+                group="{{Lesson.state}}">
+                <mat-accordion>
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title> {{Lesson.name}} </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.directionstate]" *ngIf="Lesson.directiontype === 'link'">
+                            <mat-icon>{{ Lesson.directionicon }}</mat-icon>
+                            <span>{{ Lesson.directionname }}</span>
+                            <span fxFlex></span>
+                            <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
+                                }}</span>
+                        </a>
+                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.prestate]" *ngIf="Lesson.pretype === 'link'">
+                            <mat-icon>{{ Lesson.preicon }}</mat-icon>
+                            <span>{{ Lesson.prename }}</span>
+                            <span fxFlex></span>
+                            <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
+                                }}</span>
+                        </a>
+                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.state]" *ngIf="Lesson.type === 'link'">
+                            <mat-icon>{{ Lesson.icon }}</mat-icon>
+                            <span>{{ Lesson.name }}</span>
+                            <span fxFlex></span>
+                            <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
+                                }}</span>
+                        </a>
+                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.posstate]" *ngIf="Lesson.postype === 'link'">
+                            <mat-icon>{{ Lesson.posicon }}</mat-icon>
+                            <span>{{ Lesson.posname }}</span>
+                            <span fxFlex></span>
+                            <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
+                                }}</span>
+                        </a>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </mat-list-item>
+
+
+        </mat-expansion-panel>
+    </mat-accordion>
+</mat-nav-list>
+
+<mat-nav-list *ngIf="check == 3" appAccordion>
+            <mat-list-item appAccordionLink routerLinkActive="selected">
+                <a class="" appAccordionToggle [routerLink]="['/', 'dashboard']" *ngIf="'link' === 'link'">
+                    <mat-icon>{{ 'description' }}</mat-icon>
+                    <span>{{ 'Description' }}</span>
+                    <span fxFlex></span>
+                </a>
+            </mat-list-item>
+            <mat-list-item appAccordionLink *ngFor="let Lesson of Lesson.getLesson()" group="{{Lesson.state}}">
+                <mat-accordion>
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title> {{Lesson.name}} </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.directionstate]" *ngIf="Lesson.directiontype === 'link'">
+                            <mat-icon>{{ Lesson.directionicon }}</mat-icon>
+                            <span>{{ Lesson.directionname }}</span>
+                            <span fxFlex></span>
+                            <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
+                                }}</span>
+                        </a>
+                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.prestate]" *ngIf="Lesson.pretype === 'link'">
+                            <mat-icon>{{ Lesson.preicon }}</mat-icon>
+                            <span>{{ Lesson.prename }}</span>
+                            <span fxFlex></span>
+                            <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
+                                }}</span>
+                        </a>
+                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.state]" *ngIf="Lesson.type === 'link'">
+                            <mat-icon>{{ Lesson.icon }}</mat-icon>
+                            <span>{{ Lesson.name }}</span>
+                            <span fxFlex></span>
+                            <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
+                                }}</span>
+                        </a>
+                        <a class="" appAccordionToggle [routerLink]="['/', Lesson.posstate]" *ngIf="Lesson.postype === 'link'">
+                            <mat-icon>{{ Lesson.posicon }}</mat-icon>
+                            <span>{{ Lesson.posname }}</span>
+                            <span fxFlex></span>
+                            <span class="label label-{{ badge.type }}" *ngFor="let badge of Lesson.badge">{{ badge.value
+                                }}</span>
+                        </a>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </mat-list-item>
+</mat-nav-list>
