@@ -17,11 +17,20 @@ import { Direction1Component } from './chapter1/direction1/direction1.component'
 import { Direction2Component } from './chapter2/direction2/direction2.component'
 import { Direction3Component } from './chapter3/direction3/direction3.component'
 import { Direction4Component } from './chapter4/direction4/direction4.component'
+import { AboutComponent } from './about/about.component'
+import { Workshop1Component } from './workshop/workshop1/workshop1.component'
+import { Workshop2Component } from './workshop/workshop2/workshop2.component'
+import { Workshop3Component } from './workshop/workshop3/workshop3.component'
+import { Workshop4Component } from './workshop/workshop4/workshop4.component'
+import { Workshop5Component } from './workshop/workshop5/workshop5.component'
+import { Workshop6Component } from './workshop/workshop6/workshop6.component'
+import { Workshop7Component } from './workshop/workshop7/workshop7.component'
+import { Workshop8Component } from './workshop/workshop8/workshop8.component'
 
 export const PagesRoutes: Routes = [
     {
-      path: 'testsone',
-      component: TestsOneComponent
+      path: 'about',
+      component: AboutComponent
     },
     {
       path: 'testsone',
@@ -93,6 +102,39 @@ export const PagesRoutes: Routes = [
     {
       path: 'direction4',
       component: Direction4Component
+    },
+
+    {
+      path: 'Workshop1',
+      component: Workshop1Component
+    },
+    {
+      path: 'Workshop2',
+      component: Workshop2Component
+    },
+    {
+      path: 'Workshop3',
+      component: Workshop3Component
+    },
+    {
+      path: 'Workshop4',
+      component: Workshop4Component
+    },
+    {
+      path: 'Workshop5',
+      component: Workshop5Component
+    },
+    {
+      path: 'Workshop6',
+      component: Workshop6Component
+    },
+    {
+      path: 'Workshop7',
+      component: Workshop7Component
+    },
+    {
+      path: 'Workshop8',
+      component: Workshop8Component
     },
 
     {
