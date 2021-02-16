@@ -112,7 +112,7 @@
         <mat-accordion>
             <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
                 <mat-expansion-panel-header>
-                    <mat-panel-title> {{Lesson.name}} </mat-panel-title>
+                    <mat-panel-title> <mat-icon>import_contacts</mat-icon>&nbsp;{{Lesson.name}} </mat-panel-title>
                 </mat-expansion-panel-header>
                 <a class="" appAccordionToggle [routerLink]="['/', Lesson.directionstate]"
                     *ngIf="Lesson.directiontype === 'link'">
@@ -146,14 +146,15 @@
             </mat-expansion-panel>
         </mat-accordion>
     </mat-list-item>
+    
+    <mat-list-item appAccordionLink  routerLinkActive="selected" group="{{WorkShop.state}}">
     <mat-accordion>
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
             <mat-expansion-panel-header>
-                <mat-panel-title> WorkShop </mat-panel-title>
+                <mat-panel-title> <mat-icon>book</mat-icon>&nbsp;WorkShop </mat-panel-title>
 
             </mat-expansion-panel-header>
-            <mat-list-item appAccordionLink *ngFor="let WorkShop of WorkShop.getWorkShop()" routerLinkActive="selected"
-                group="{{WorkShop.state}}">
+                <div *ngFor="let WorkShop of WorkShop.getWorkShop()">
                 <a class="" appAccordionToggle [routerLink]="['/', WorkShop.state]" *ngIf="WorkShop.type === 'link'">
                     <mat-icon>{{ WorkShop.icon }}</mat-icon>
                     <span>{{ WorkShop.name }}</span>
@@ -161,9 +162,13 @@
                     <span class="label label-{{ badge.type }}" *ngFor="let badge of WorkShop.badge">{{ badge.value
                         }}</span>
                 </a>
-            </mat-list-item>
-        </mat-expansion-panel>
-    </mat-accordion>
+            </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-list-item>
+        
+
+    
     <mat-list-item appAccordionLink>
         <a class="" appAccordionToggle [routerLink]="['/', 'about']" *ngIf="'link' === 'link'">
             <mat-icon>{{ 'support_agent' }}</mat-icon>

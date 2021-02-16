@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-workshop6',
   templateUrl: './workshop6.component.html',
-  styleUrls: ['./workshop6.component.css']
+  styleUrls: ['../workshop1/workshop1.component.css']
 })
 export class Workshop6Component implements OnInit {
 
