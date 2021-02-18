@@ -1,35 +1,43 @@
 <mat-card class="example-card">
 
 </mat-card>
-<mat-card class="example-card">
+<mat-card *ngIf="check == '1'" class="example-card">
     <mat-card-header>
-        <mat-icon>{{'one'}}</mat-icon>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>บททดสอบก่อนเรียนบทที่ 1 ความรู้พื้นฐานด้านระบบดิจิทัล</mat-card-title>
+        <mat-card-subtitle>แบบทดสอบปรนัยชนิดเลือกตอบ จำนวน 4 ตัวเลือก โดยมีคำตอบที่ถูกต้องเพียงข้อเดียว จำนวน 20 ข้อ</mat-card-subtitle>
+    </mat-card-header>
+
+        <mat-card-content *ngFor="let pre of pre1;let i = index">
+            <label id="example-radio-group-label">{{pre.p}}</label>
+            <img style="margin-top: 30px;display:flex; max-width: 80%;" *ngIf="pre.type== 'img'" mat-card-image src="{{pre.img}}" alt="Photo">
+            <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
+                [(ngModel)]="pre.favorite">
+                <mat-radio-button class="example-radio-button" *ngFor="let season of pre.seasons" [value]="season.id"
+                    (change)="a($event, i,pre.answer)">
+                    {{season.choice}}
+                </mat-radio-button>
+            </mat-radio-group>
+            <div>Your favorite season is: {{pre.favorite}}</div>
+        </mat-card-content>
+
+
+    <mat-card-actions>
+        <button mat-button (click)="b()">LIKE</button>
+        <button mat-button (click)="c()">LOVE</button>
+    </mat-card-actions>
+</mat-card>
+
+<mat-card *ngIf="check == '2'" class="example-card">
+    <mat-card-header>
+        <mat-card-title>ผล</mat-card-title>
+        <mat-card-subtitle>ผล</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-        <label id="example-radio-group-label">Pick your favorite season</label>
-        <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
-            [(ngModel)]="favoriteSeason">
-            <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
-                {{season}}
-            </mat-radio-button>
-        </mat-radio-group>
-        <div>Your favorite season is: {{favoriteSeason}}</div>
-        <label id="example-radio-group-label">Pick your favorite season</label>
-        <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
-            [(ngModel)]="favoriteSeason">
-            <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
-                {{season}}
-            </mat-radio-button>
-        </mat-radio-group>
-        <div>Your favorite season is: {{favoriteSeason}}</div>
+        <p>{{myData}}</p>
     </mat-card-content>
     <mat-card-actions>
-        <a download="filename" type="png" target="_blank" href="assets/images/clipart3171114.png">
-            Click here to download image
-          </a>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
+        <button mat-button (click)="d()">LIKE</button>
+        <button mat-button (click)="e()">LOVE</button>
     </mat-card-actions>
 </mat-card>

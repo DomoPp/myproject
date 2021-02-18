@@ -1,1 +1,46 @@
-<p>pretest2 works!</p>
+<mat-card class="example-card">
+
+</mat-card>
+<mat-card *ngIf="check == '1'" class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>บททดสอบก่อนเรียนบทที่ 1 ความรู้พื้นฐานด้านระบบดิจิทัล</mat-card-title>
+        <mat-card-subtitle>แบบทดสอบปรนัยชนิดเลือกตอบ จำนวน 4 ตัวเลือก โดยมีคำตอบที่ถูกต้องเพียงข้อเดียว จำนวน 20 ข้อ</mat-card-subtitle>
+    </mat-card-header>
+
+        <mat-card-content *ngFor="let pre of work;let i = index">
+            <label *ngIf="pre.type=='text'" id="example-radio-group-label">{{pre.p}}</label>
+            <label *ngIf="pre.type=='math'" id="example-radio-group-label"><ng-katex [equation]="pre.p"></ng-katex></label>
+            
+            <img style="margin-top: 30px;display:flex; max-width: 80%;" *ngIf="pre.type== 'img'" mat-card-image src="{{pre.img}}" alt="Photo">
+            <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
+                [(ngModel)]="pre.favorite">
+                <mat-radio-button class="example-radio-button" *ngFor="let season of pre.seasons" [value]="season.id"
+                    (change)="a($event, i,pre.answer)">
+                    <ng-katex *ngIf="pre.choiceType=='math'" [equation]="season.choice"></ng-katex>
+                    <div *ngIf="pre.choiceType==''">{{season.choice}}</div>
+                </mat-radio-button>
+            </mat-radio-group>
+            <!-- <div>Your favorite season is: {{pre.favorite}}</div> -->
+        </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-button (click)="b()">LIKE</button>
+        <button mat-button (click)="c()">LOVE</button>
+    </mat-card-actions>
+</mat-card>
+
+<mat-card *ngIf="check == '2'" class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>ผลการสอบก่อนเรียนบทที่ 1 ความรู้พื้นฐานด้านระบบดิจิทัล</mat-card-title>
+        <mat-card-subtitle>ได้คะแนน</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>{{myData}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button (click)="d()">LIKE</button>
+        <button mat-button (click)="e()">LOVE</button>
+    </mat-card-actions>
+</mat-card>

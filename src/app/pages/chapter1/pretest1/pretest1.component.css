@@ -4,6 +4,10 @@
     width: 75%; 
     
   }
+  .example-header-image {
+    background-image: url('../../../../assets/images/clipart3171114.png');
+    background-size: cover;
+  }
   
   .example-radio-group {
     display: flex;

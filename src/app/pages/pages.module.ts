@@ -11,7 +11,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-
+import { KatexModule } from 'ng-katex';
 
 
 
@@ -84,7 +84,8 @@ import { AboutComponent } from './about/about.component';
     MatRadioModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatButtonModule,
+    KatexModule
     
   ]
 })

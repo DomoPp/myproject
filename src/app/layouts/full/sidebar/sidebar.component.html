@@ -2,13 +2,13 @@
 <!-- sidebar -->
 <!-- ============================================================== -->
 
-<div class="user-profile" style="background: url(assets/images/background/user-info.jpg) no-repeat;">
-    <!-- User profile image -->
+<!-- <div class="user-profile" style="background: url(assets/images/background/user-info.jpg) no-repeat;">
+    User profile image
     <div class="profile-img"> <img src="assets/images/users/profile.png" alt="user"> </div>
-    <!-- User profile text -->
-    <!-- ============================================================== -->
-    <!-- Profile - style you can find in header.scss -->
-    <!-- ============================================================== -->
+    User profile text
+    ==============================================================
+    Profile - style you can find in header.scss
+    ==============================================================
     <div class="profile-text"><a [matMenuTriggerFor]="sdprofile" class=""> Markarn Doe <i
                 class="ti-angle-down font-12 m-l-5"></i></a></div>
 
@@ -27,8 +27,8 @@
         </button>
     </mat-menu>
 
-</div>
-<mat-nav-list *ngIf="check == 1" appAccordion>
+</div> -->
+<!-- <mat-nav-list *ngIf="check == 1" appAccordion>
     <mat-list-item appAccordionLink *ngFor="let menuitem of menuItems.getMenuitem()" routerLinkActive="selected"
         group="{{menuitem.state}}">
         <a class="" appAccordionToggle [routerLink]="['/', menuitem.state]" *ngIf="menuitem.type === 'link'">
@@ -48,7 +48,7 @@
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
             <mat-expansion-panel-header>
                 <mat-panel-title> Lesson </mat-panel-title>
-                <!-- <mat-panel-description> Currently I am {{panelOpenState ? 'open' : 'closed'}} </mat-panel-description> -->
+                <mat-panel-description> Currently I am {{panelOpenState ? 'open' : 'closed'}} </mat-panel-description>
             </mat-expansion-panel-header>
 
 
@@ -98,7 +98,7 @@
 
         </mat-expansion-panel>
     </mat-accordion>
-</mat-nav-list>
+</mat-nav-list> -->
 
 <mat-nav-list *ngIf="check == 3" appAccordion>
     <mat-list-item appAccordionLink routerLinkActive="selected">
