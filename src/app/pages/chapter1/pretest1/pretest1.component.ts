@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { pre1 } from '../../pre1'
+import { pre1 } from '../../data1'
 
 
 @Component({

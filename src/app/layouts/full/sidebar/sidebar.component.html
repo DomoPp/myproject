@@ -100,7 +100,7 @@
     </mat-accordion>
 </mat-nav-list> -->
 
-<mat-nav-list *ngIf="check == 3" appAccordion>
+<mat-nav-list style="padding-top:10% ;" *ngIf="check == 3" appAccordion>
     <mat-list-item appAccordionLink routerLinkActive="selected">
         <a class="" appAccordionToggle [routerLink]="['/', 'dashboard']" *ngIf="'link' === 'link'">
             <mat-icon>{{ 'description' }}</mat-icon>
@@ -169,7 +169,7 @@
         
 
     
-    <mat-list-item appAccordionLink>
+    <mat-list-item style="margin-top: 10px;" appAccordionLink>
         <a class="" appAccordionToggle [routerLink]="['/', 'about']" *ngIf="'link' === 'link'">
             <mat-icon>{{ 'support_agent' }}</mat-icon>
             <span>{{ 'About' }}</span>
