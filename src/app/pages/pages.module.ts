@@ -41,6 +41,7 @@ import { Workshop6Component } from './workshop/workshop6/workshop6.component';
 import { Workshop7Component } from './workshop/workshop7/workshop7.component';
 import { Workshop8Component } from './workshop/workshop8/workshop8.component';
 import { AboutComponent } from './about/about.component';
+import { SetlocalstComponent } from './setlocalst/setlocalst.component';
 
 
 @NgModule({
@@ -72,6 +73,7 @@ import { AboutComponent } from './about/about.component';
     Workshop7Component,
     Workshop8Component,
     AboutComponent,
+    SetlocalstComponent,
   ],
   imports: [
     CommonModule,

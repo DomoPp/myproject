@@ -12,8 +12,8 @@ export class Posttest3Component implements OnInit {
   state:any = []
   total:number = 0
   work = pre3_3
-  myData = JSON.parse(localStorage.getItem('total') || "")
-  check = JSON.parse(localStorage.getItem('checks') || "")
+  myData = JSON.parse(localStorage.getItem('total3_3') || "")
+  check = JSON.parse(localStorage.getItem('checks3_3') || "")
 
   constructor() { }
 
@@ -29,16 +29,16 @@ export class Posttest3Component implements OnInit {
       if (a == this.work[i].answer) {
         
         this.total += 1
-        localStorage.setItem('total', JSON.stringify(this.total));
+        localStorage.setItem('total3_3', JSON.stringify(this.total));
 
         // @ts-ignore
-        this.myData = JSON.parse(localStorage.getItem('total') || "")
+        this.myData = JSON.parse(localStorage.getItem('total3_3') || "")
         
       }
     })
     console.log(this.myData);
-    localStorage.setItem('checks', '2');
-    this.check = JSON.parse(localStorage.getItem('checks') || "")
+    localStorage.setItem('checks3_3', '2');
+    this.check = JSON.parse(localStorage.getItem('checks3_3') || "")
     console.log(this.check);
     
     // localStorage.setItem('checks', 'B');
@@ -49,17 +49,17 @@ export class Posttest3Component implements OnInit {
   c(){
     this.myData = '0'
     this.total = 0
-    localStorage.setItem('total', JSON.stringify(this.total));
-    console.log(localStorage.getItem('total'));
+    localStorage.setItem('total3_3', JSON.stringify(this.total));
+    console.log(localStorage.getItem('total3_3'));
   }
   d(){
 
     
   }
   e(){
-    localStorage.setItem('checks', '1');
-    this.check = JSON.parse(localStorage.getItem('checks') || "")
-    console.log(localStorage.getItem('checks'));
+    localStorage.setItem('checks3_3', '1');
+    this.check = JSON.parse(localStorage.getItem('checks3_3') || "")
+    console.log(localStorage.getItem('checks3_3'));
   }
 
 }

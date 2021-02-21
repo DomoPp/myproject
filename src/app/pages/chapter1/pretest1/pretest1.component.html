@@ -44,3 +44,7 @@
         <button mat-button (click)="e()">LOVE</button>
     </mat-card-actions>
 </mat-card>
+
+<mat-card *ngIf="check == '2'" style="position: fixed;right: 0;bottom: 65%;background-color: transparent;">
+    <button [routerLink]="['/chapter1']" style="font-size: 24px;padding: 10px;border-radius: 100px; background-color:gold;" mat-raised-button>Pretest<mat-icon>{{'double_arrow'}}</mat-icon></button>
+</mat-card>

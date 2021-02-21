@@ -10,6 +10,7 @@ export interface Menu {
 }
 
 const WORKSHOP = [
+  { state: 'three', type: 'link', name: 'three', icon: '3d_rotation', badge:''  },
   { state: 'Workshop1', name: 'Workshop1', type: 'link', icon: 'book', badge:'' },
   { state: 'Workshop2', name: 'Workshop2', type: 'link', icon: 'book', badge:'' },
   { state: 'Workshop3', name: 'Workshop3', type: 'link', icon: 'book', badge:'' },

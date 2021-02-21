@@ -52,25 +52,25 @@ export const pre2 = [
         favorite: ''
     },
     {
-        p: '3. Binary Number system หมายถึงระบบเลขฐานใด',
+        p: '3. เลขฐานสองจะมีค่าลอจิกเป็นเท่าไร',
         type: 'text',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: 'เลขฐานสอง',
+                choice: '0,1',
             },
             {
                 id: 2,
-                choice: 'เลขฐานแปด',
+                choice: '0,1,2',
             },
             {
                 id: 3,
-                choice: 'เลขฐานสิบ',
+                choice: '0,1,2,3',
             },
             {
                 id: 4,
-                choice: 'เลขฐานสิบหก',
+                choice: '1,2',
             },
         ],
         choiceType: '',
@@ -110,45 +110,97 @@ export const pre2 = [
         seasons: [
             {
                 id: 1,
-                choice: '1234AB_{16}',
+                choice: '1234AB',
             },
             {
                 id: 2,
-                choice: '1150',
+                choice: '0x1150',
             },
             {
                 id: 3,
-                choice: '1010110_2',
+                choice: '101 0110',
             },
             {
                 id: 4,
-                choice: '1245_8',
+                choice: '1,245',
             },
         ],
-        choiceType: 'math',
+        choiceType: '',
         answer: 3,
         favorite: ''
     },
     {
-        p: '6. เลขฐานสองค่า 11101.101 เขียนให้อยู่ในรูปของเลขฐานสิบได้อย่างไร',
+        p: '6. ข้อใดเป็นระบบเลขฐานสิบหก',
         type: 'text',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: '23.7',
+                choice: '1234AB',
             },
             {
                 id: 2,
-                choice: '25.9',
+                choice: '0X1150',
             },
             {
                 id: 3,
-                choice: '27.2',
+                choice: '101 0110',
             },
             {
                 id: 4,
-                choice: '29.5',
+                choice: '1,245',
+            },
+        ],
+        choiceType: '',
+        answer: 1,
+        favorite: ''
+    },
+    {
+        p: '7. ข้อใดเป็นระบบเลขฐานแปด',
+        type: 'text',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: '1234AB',
+            },
+            {
+                id: 2,
+                choice: '0X1150',
+            },
+            {
+                id: 3,
+                choice: '101 0110',
+            },
+            {
+                id: 4,
+                choice: '1,245',
+            },
+        ],
+        choiceType: '',
+        answer: 2,
+        favorite: ''
+    },
+    {
+        p: '8. ข้อใดเป็นระบบเลขฐานสิบ',
+        type: 'text',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: '1234AB',
+            },
+            {
+                id: 2,
+                choice: '0X1150',
+            },
+            {
+                id: 3,
+                choice: '101 0110',
+            },
+            {
+                id: 4,
+                choice: '1,245',
             },
         ],
         choiceType: '',
@@ -156,7 +208,7 @@ export const pre2 = [
         favorite: ''
     },
     {
-        p: '7. เลขยกกำลังค่า (8x10_3)+(9x10_2)+(0x10_1)+(3x10_0) มีค่าตรงกับข้อใด',
+        p: '9. เลขยกกำลังค่า (8x10_3)+(9x10_2)+(0x10_1)+(3x10_0) มีค่าตรงกับข้อใด',
         type: 'math',
         img: '',
         seasons: [
@@ -181,26 +233,27 @@ export const pre2 = [
         answer: 4,
         favorite: ''
     },
+    
     {
-        p: '8. เลขฐานสิบค่า 921 เขียนเป็นเลขฐานแปดได้เท่าไหร่',
+        p: '10. A ในฐานสิบหกมีค่าเท่ากับเท่าใด',
         type: 'text',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: '1631_8',
+                choice: '10',
             },
             {
                 id: 2,
-                choice: '1361_8',
+                choice: '11',
             },
             {
                 id: 3,
-                choice: '1616_8',
+                choice: '12',
             },
             {
                 id: 4,
-                choice: '1316_8',
+                choice: '13',
             },
         ],
         choiceType: 'math',
@@ -208,129 +261,25 @@ export const pre2 = [
         favorite: ''
     },
     {
-        p: '9. เลขฐานแปดค่า 45 เขียนเป็นเลขฐานสองได้เท่าไหร',
+        p: '11. ข้อใดคือสัญลักษณ์สูงสุดของระบบเลขฐานสิบหก',
         type: 'text',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: '110100_2',
+                choice: 'A',
             },
             {
                 id: 2,
-                choice: '101101_2',
+                choice: '0',
             },
             {
                 id: 3,
-                choice: '100101_2',
+                choice: 'F',
             },
             {
                 id: 4,
-                choice: '110101_2',
-            },
-        ],
-        choiceType: 'math',
-        answer: 3,
-        favorite: ''
-    },
-    {
-        p: '10. เลขฐานสิบค่า 5 เขียนเป็นฐานสองได้อย่างไร',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: '101_2',
-            },
-            {
-                id: 2,
-                choice: '111_2',
-            },
-            {
-                id: 3,
-                choice: '110_2',
-            },
-            {
-                id: 4,
-                choice: '010_2',
-            },
-        ],
-        choiceType: 'math',
-        answer: 1,
-        favorite: ''
-    },
-    {
-        p: '11. จงเปลี่ยนเลข 14 ฐานสิบเป็นเลขฐานสองได้ค่าเท่าไร',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: '1111_2',
-            },
-            {
-                id: 2,
-                choice: '1110_2',
-            },
-            {
-                id: 3,
-                choice: '1011_2',
-            },
-            {
-                id: 4,
-                choice: '0011_2',
-            },
-        ],
-        choiceType: 'math',
-        answer: 2,
-        favorite: ''
-    },
-    {
-        p: '12. จงเปลี่ยนเลข 0.4375 ฐานสิบเป็นเลขฐานสองได้ค่าเท่าไร',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: '0.0011_2',
-            },
-            {
-                id: 2,
-                choice: '0.1111_2',
-            },
-            {
-                id: 3,
-                choice: '0.0111_2',
-            },
-            {
-                id: 4,
-                choice: '0.0001_2',
-            },
-        ],
-        choiceType: 'math',
-        answer: 3,
-        favorite: ''
-    },
-    {
-        p: '13. จงเปลี่ยนเลขฐานสอง 101.11 ต่อไปนี้ให้เป็นเลขฐานสิบได้ค่าเท่าไร',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: '5.55 ',
-            },
-            {
-                id: 2,
-                choice: '5.65',
-            },
-            {
-                id: 3,
-                choice: ' 5.75 ',
-            },
-            {
-                id: 4,
-                choice: '5.85',
+                choice: '16',
             },
         ],
         choiceType: '',
@@ -338,25 +287,77 @@ export const pre2 = [
         favorite: ''
     },
     {
-        p: '14. จากเลขฐานสองคือ 1111+101000 ได้ค่าเท่าไร',
+        p: '12.\\hspace{0.2em}ตัวเลขดังต่อไปนี้\\hspace{0.2em}44_8\\hspace{0.2em}อ่านว่าอย่างไร',
+        type: 'math',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: 'สี่-สี่-แปด',
+            },
+            {
+                id: 2,
+                choice: 'สี่-สี่-ฐานแปด',
+            },
+            {
+                id: 3,
+                choice: 'สี่-สิบ-สี่-แปด',
+            },
+            {
+                id: 4,
+                choice: 'สี่-สิบ-สี่-ฐานแปด ',
+            },
+        ],
+        choiceType: '',
+        answer: 2,
+        favorite: ''
+    },
+    {
+        p: '13. ข้อใดคือหลักการแบ่งกลุ่มเพื่อการแปลงค่าเลขฐานสองให้เป็นฐานสิบหก',
         type: 'text',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: ' 100011_2 ',
+                choice: 'แบ่งกลุ่มละสี่หลักจากด้านขวาไปด้านซ้าย ',
             },
             {
                 id: 2,
-                choice: ' 110011_2 ',
+                choice: 'แบ่งกลุ่มละสี่หลักจากด้านซ้ายไปด้านขวา',
             },
             {
                 id: 3,
-                choice: ' 111011_2 ',
+                choice: ' แบ่งกลุ่มละสองหลักจากด้านขวาไปด้านซ้าย ',
             },
             {
                 id: 4,
-                choice: ' 111111_2',
+                choice: 'แบ่งกลุ่มละสองหลักจากด้านซ้ายไปด้านขวา ',
+            },
+        ],
+        choiceType: '',
+        answer: 1,
+        favorite: ''
+    },
+    {
+        p: '14. ข้อใดเขียนถูกต้อง',
+        type: 'text',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: ' 125_2 ',
+            },
+            {
+                id: 2,
+                choice: ' 10810_2 ',
+            },
+            {
+                id: 3,
+                choice: ' 150 ',
+            },
+            {
+                id: 4,
+                choice: ' 101013_2 ',
             },
         ],
         choiceType: 'math',
@@ -365,55 +366,55 @@ export const pre2 = [
     },
 
     {
-        p: '15. นำเลขฐานสองมาคูณกันคือ 1100x1010 ได้ค่าเท่าไร',
+        p: '15. อักษร A อยู่ในระบบฐานอะไร',
         type: 'text',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: ' 1110000_2 ',
+                choice: 'ฐานสอง',
             },
             {
                 id: 2,
-                choice: ' 1111000_2 ',
+                choice: 'ฐานแปด',
             },
             {
                 id: 3,
-                choice: '  1100011 _2 ',
+                choice: 'ฐานสิบ',
             },
             {
                 id: 4,
-                choice: '  1111111_2',
-            },
-        ],
-        choiceType: 'math',
-        answer: 2,
-        favorite: ''
-    },
-    {
-        p: '16. จงลบเลขฐานสองคือ 11011-10100 ว่าได้ค่าเท่าไร',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: ' 001_2 ',
-            },
-            {
-                id: 2,
-                choice: ' 011_2 ',
-            },
-            {
-                id: 3,
-                choice: '  010_2 ',
-            },
-            {
-                id: 4,
-                choice: '   111_2',
+                choice: 'ฐานสิบหก',
             },
         ],
         choiceType: 'math',
         answer: 4,
+        favorite: ''
+    },
+    {
+        p: '16. จงแปลงเลขฐานสองคือ 11011 เป็นฐานสิบได้ค่าเท่าไร',
+        type: 'text',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: ' 27 ',
+            },
+            {
+                id: 2,
+                choice: ' 26 ',
+            },
+            {
+                id: 3,
+                choice: '25 ',
+            },
+            {
+                id: 4,
+                choice: '24',
+            },
+        ],
+        choiceType: '',
+        answer: 1,
         favorite: ''
     },
     {
@@ -439,7 +440,7 @@ export const pre2 = [
             },
         ],
         choiceType: '',
-        answer: 4,
+        answer: 2,
         favorite: ''
     },
     {
@@ -465,7 +466,7 @@ export const pre2 = [
             },
         ],
         choiceType: 'math',
-        answer: 4,
+        answer: 1,
         favorite: ''
     },
     {
@@ -495,29 +496,29 @@ export const pre2 = [
         favorite: ''
     },
     {
-        p: '20. จงเปลี่ยนเลข สิบหก AB เป็นเลขฐานสิบค่าเท่าไร',
+        p: '20. จงบวกเลขฐานสอง 1101 + 1001 มีค่าเท่าไร',
         type: 'text',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: '170',
+                choice: '10110',
             },
             {
                 id: 2,
-                choice: '171',
+                choice: '10111',
             },
             {
                 id: 3,
-                choice: '172',
+                choice: '11100',
             },
             {
                 id: 4,
-                choice: '173',
+                choice: '11011',
             },
         ],
         choiceType: '',
-        answer: 2,
+        answer: 1,
         favorite: ''
     },
 ]
@@ -528,34 +529,166 @@ export const pre2 = [
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 export const pre2_2 = [
+    
     {
-        p: '1. นำเลขฐานสองมาคูณกันคือ 1100x1010 ได้ค่าเท่าไร',
+        p: '1. ข้อใดเป็นระบบเลขฐานแปด',
         type: 'text',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: ' 1110000_2 ',
+                choice: '1234AB',
             },
             {
                 id: 2,
-                choice: ' 1111000_2 ',
+                choice: '0X1150',
             },
             {
                 id: 3,
-                choice: '  1100011 _2 ',
+                choice: '101 0110',
             },
             {
                 id: 4,
-                choice: '  1111111_2',
+                choice: '1,245',
             },
         ],
-        choiceType: 'math',
+        choiceType: '',
         answer: 2,
         favorite: ''
     },
     {
-        p: '2. หลักการทำงานของอุปกรณ์ใดเปรียบเทียบได้กับการทำงานของระบบเลขฐานสอง',
+        p: '2. ข้อใดเป็นระบบเลขฐานสิบ',
+        type: 'text',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: '1234AB',
+            },
+            {
+                id: 2,
+                choice: '0X1150',
+            },
+            {
+                id: 3,
+                choice: '101 0110',
+            },
+            {
+                id: 4,
+                choice: '1,245',
+            },
+        ],
+        choiceType: '',
+        answer: 4,
+        favorite: ''
+    },
+    {
+        p: '3. เลขยกกำลังค่า (8x10_3)+(9x10_2)+(0x10_1)+(3x10_0) มีค่าตรงกับข้อใด',
+        type: 'math',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: '9803',
+            },
+            {
+                id: 2,
+                choice: '8913',
+            },
+            {
+                id: 3,
+                choice: '8930',
+            },
+            {
+                id: 4,
+                choice: '8903',
+            },
+        ],
+        choiceType: '',
+        answer: 4,
+        favorite: ''
+    },
+    
+    {
+        p: '4. A ในฐานสิบหกมีค่าเท่ากับเท่าใด',
+        type: 'text',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: '10',
+            },
+            {
+                id: 2,
+                choice: '11',
+            },
+            {
+                id: 3,
+                choice: '12',
+            },
+            {
+                id: 4,
+                choice: '13',
+            },
+        ],
+        choiceType: 'math',
+        answer: 1,
+        favorite: ''
+    },
+    {
+        p: '5. ข้อใดคือสัญลักษณ์สูงสุดของระบบเลขฐานสิบหก',
+        type: 'text',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: 'A',
+            },
+            {
+                id: 2,
+                choice: '0',
+            },
+            {
+                id: 3,
+                choice: 'F',
+            },
+            {
+                id: 4,
+                choice: '16',
+            },
+        ],
+        choiceType: '',
+        answer: 3,
+        favorite: ''
+    },
+    {
+        p: '6. ระบบเลขฐานใดที่ใช้ในชีวิตประจำวันของมนุษย์',
+        type: 'text',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: 'เลขฐานสอง',
+            },
+            {
+                id: 2,
+                choice: 'เลขฐานแปด',
+            },
+            {
+                id: 3,
+                choice: 'เลขฐานสิบ',
+            },
+            {
+                id: 4,
+                choice: 'เลขฐานสิบหก',
+            },
+        ],
+        choiceType: '',
+        answer: 3,
+        favorite: ''
+    },
+    {
+        p: '7. หลักการทำงานของอุปกรณ์ใดเปรียบเทียบได้กับการทำงานของระบบเลขฐานสอง',
         type: 'text',
         img: '',
         seasons: [
@@ -580,9 +713,34 @@ export const pre2_2 = [
         answer: 2,
         favorite: ''
     },
-    
     {
-        p: '3. ข้อใดไม่ใช่สัญลักษณ์ของเลขฐานสอง',
+        p: '8. เลขฐานสองจะมีค่าลอจิกเป็นเท่าไร',
+        type: 'text',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: '0,1',
+            },
+            {
+                id: 2,
+                choice: '0,1,2',
+            },
+            {
+                id: 3,
+                choice: '0,1,2,3',
+            },
+            {
+                id: 4,
+                choice: '1,2',
+            },
+        ],
+        choiceType: '',
+        answer: 1,
+        favorite: ''
+    },
+    {
+        p: '9. ข้อใดไม่ใช่สัญลักษณ์ของเลขฐานสอง',
         type: 'text',
         img: '',
         seasons: [
@@ -608,399 +766,165 @@ export const pre2_2 = [
         favorite: ''
     },
     {
-        p: '4. ข้อใดเป็นระบบเลขฐานสอง',
+        p: '10. ข้อใดเป็นระบบเลขฐานสอง',
         type: 'text',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: '1234AB_{16}',
+                choice: '1234AB',
             },
             {
                 id: 2,
-                choice: '1150',
+                choice: '0x1150',
             },
             {
                 id: 3,
-                choice: '1010110_2',
+                choice: '101 0110',
             },
             {
                 id: 4,
-                choice: '1245_8',
+                choice: '1,245',
             },
         ],
-        choiceType: 'math',
+        choiceType: '',
         answer: 3,
         favorite: ''
     },
     {
-        p: '5. Binary Number system หมายถึงระบบเลขฐานใด',
+        p: '11. ข้อใดเป็นระบบเลขฐานสิบหก',
         type: 'text',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: 'เลขฐานสอง',
+                choice: '1234AB',
             },
             {
                 id: 2,
-                choice: 'เลขฐานแปด',
+                choice: '0X1150',
             },
             {
                 id: 3,
-                choice: 'เลขฐานสิบ',
+                choice: '101 0110',
             },
             {
                 id: 4,
-                choice: 'เลขฐานสิบหก',
+                choice: '1,245',
             },
         ],
         choiceType: '',
         answer: 1,
         favorite: ''
     },
-    
     {
-        p: '6. เลขยกกำลังค่า (8x10_3)+(9x10_2)+(0x10_1)+(3x10_0) มีค่าตรงกับข้อใด',
+        p: '12.\\hspace{0.2em}ตัวเลขดังต่อไปนี้\\hspace{0.2em}44_8\\hspace{0.2em}อ่านว่าอย่างไร',
         type: 'math',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: '9803',
+                choice: 'สี่-สี่-แปด',
             },
             {
                 id: 2,
-                choice: '8913',
+                choice: 'สี่-สี่-ฐานแปด',
             },
             {
                 id: 3,
-                choice: '8930',
+                choice: 'สี่-สิบ-สี่-แปด',
             },
             {
                 id: 4,
-                choice: '8903',
+                choice: 'สี่-สิบ-สี่-ฐานแปด ',
             },
         ],
         choiceType: '',
-        answer: 4,
-        favorite: ''
-    },
-    {
-        p: '7. เลขฐานสิบค่า 921 เขียนเป็นเลขฐานแปดได้เท่าไหร่',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: '1631_8',
-            },
-            {
-                id: 2,
-                choice: '1361_8',
-            },
-            {
-                id: 3,
-                choice: '1616_8',
-            },
-            {
-                id: 4,
-                choice: '1316_8',
-            },
-        ],
-        choiceType: 'math',
-        answer: 1,
-        favorite: ''
-    },
-    {
-        p: '8. ระบบเลขฐานใดที่ใช้ในชีวิตประจำวันของมนุษย์',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: 'เลขฐานสอง',
-            },
-            {
-                id: 2,
-                choice: 'เลขฐานแปด',
-            },
-            {
-                id: 3,
-                choice: 'เลขฐานสิบ',
-            },
-            {
-                id: 4,
-                choice: 'เลขฐานสิบหก',
-            },
-        ],
-        choiceType: '',
-        answer: 3,
-        favorite: ''
-    },
-    {
-        p: '9. เลขฐานแปดค่า 45 เขียนเป็นเลขฐานสองได้เท่าไหร',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: '110100_2',
-            },
-            {
-                id: 2,
-                choice: '101101_2',
-            },
-            {
-                id: 3,
-                choice: '100101_2',
-            },
-            {
-                id: 4,
-                choice: '110101_2',
-            },
-        ],
-        choiceType: 'math',
-        answer: 3,
-        favorite: ''
-    },
-    {
-        p: '10. เลขฐานสองค่า 11101.101 เขียนให้อยู่ในรูปของเลขฐานสิบได้อย่างไร',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: '23.7',
-            },
-            {
-                id: 2,
-                choice: '25.9',
-            },
-            {
-                id: 3,
-                choice: '27.2',
-            },
-            {
-                id: 4,
-                choice: '29.5',
-            },
-        ],
-        choiceType: '',
-        answer: 4,
-        favorite: ''
-    },
-    {
-        p: '11. จงเปลี่ยนเลข 14 ฐานสิบเป็นเลขฐานสองได้ค่าเท่าไร',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: '1111_2',
-            },
-            {
-                id: 2,
-                choice: '1110_2',
-            },
-            {
-                id: 3,
-                choice: '1011_2',
-            },
-            {
-                id: 4,
-                choice: '0011_2',
-            },
-        ],
-        choiceType: 'math',
         answer: 2,
         favorite: ''
     },
     {
-        p: '12. จงเปลี่ยนเลข 0.4375 ฐานสิบเป็นเลขฐานสองได้ค่าเท่าไร',
+        p: '13. ข้อใดคือหลักการแบ่งกลุ่มเพื่อการแปลงค่าเลขฐานสองให้เป็นฐานสิบหก',
         type: 'text',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: '0.0011_2',
+                choice: 'แบ่งกลุ่มละสี่หลักจากด้านขวาไปด้านซ้าย ',
             },
             {
                 id: 2,
-                choice: '0.1111_2',
+                choice: 'แบ่งกลุ่มละสี่หลักจากด้านซ้ายไปด้านขวา',
             },
             {
                 id: 3,
-                choice: '0.0111_2',
+                choice: ' แบ่งกลุ่มละสองหลักจากด้านขวาไปด้านซ้าย ',
             },
             {
                 id: 4,
-                choice: '0.0001_2',
+                choice: 'แบ่งกลุ่มละสองหลักจากด้านซ้ายไปด้านขวา ',
             },
         ],
-        choiceType: 'math',
-        answer: 3,
+        choiceType: '',
+        answer: 1,
         favorite: ''
     },
     {
-        p: '13. เลขฐานสิบค่า 5 เขียนเป็นฐานสองได้อย่างไร',
+        p: '14. ข้อใดเขียนถูกต้อง',
         type: 'text',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: '101_2',
+                choice: ' 125_2 ',
             },
             {
                 id: 2,
-                choice: '111_2',
+                choice: ' 10810_2 ',
             },
             {
                 id: 3,
-                choice: '110_2',
+                choice: ' 150 ',
             },
             {
                 id: 4,
-                choice: '010_2',
+                choice: ' 101013_2 ',
             },
         ],
         choiceType: 'math',
         answer: 1,
         favorite: ''
     },
+
     {
-        p: '14. จากเลขฐานสองคือ 1111+101000 ได้ค่าเท่าไร',
+        p: '15. อักษร A อยู่ในระบบฐานอะไร',
         type: 'text',
         img: '',
         seasons: [
             {
                 id: 1,
-                choice: ' 100011_2 ',
+                choice: 'ฐานสอง',
             },
             {
                 id: 2,
-                choice: ' 110011_2 ',
+                choice: 'ฐานแปด',
             },
             {
                 id: 3,
-                choice: ' 111011_2 ',
+                choice: 'ฐานสิบ',
             },
             {
                 id: 4,
-                choice: ' 111111_2',
+                choice: 'ฐานสิบหก',
             },
         ],
         choiceType: 'math',
-        answer: 1,
+        answer: 4,
         favorite: ''
     },
     
     {
-        p: '15. จงลบเลขฐานสองคือ 11011-10100 ว่าได้ค่าเท่าไร',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: ' 001_2 ',
-            },
-            {
-                id: 2,
-                choice: ' 011_2 ',
-            },
-            {
-                id: 3,
-                choice: '  010_2 ',
-            },
-            {
-                id: 4,
-                choice: '   111_2',
-            },
-        ],
-        choiceType: 'math',
-        answer: 4,
-        favorite: ''
-    },
-    {
-        p: '16. จงเปลี่ยนเลขฐานสอง 101.11 ต่อไปนี้ให้เป็นเลขฐานสิบได้ค่าเท่าไร',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: '5.55 ',
-            },
-            {
-                id: 2,
-                choice: '5.65',
-            },
-            {
-                id: 3,
-                choice: ' 5.75 ',
-            },
-            {
-                id: 4,
-                choice: '5.85',
-            },
-        ],
-        choiceType: '',
-        answer: 3,
-        favorite: ''
-    },
-    {
-        p: '17.  จงเปลี่ยนเลข สิบหก AB เป็นเลขฐานสิบค่าเท่าไร',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: '170',
-            },
-            {
-                id: 2,
-                choice: '171',
-            },
-            {
-                id: 3,
-                choice: '172',
-            },
-            {
-                id: 4,
-                choice: '173',
-            },
-        ],
-        choiceType: '',
-        answer: 2,
-        favorite: ''
-    },
-    {
-        p: '18. จงเปลี่ยนเลข 1213 เลขฐานแปดให้เป็นเลขฐานสิบว่ามีค่าเท่าไร',
-        type: 'text',
-        img: '',
-        seasons: [
-            {
-                id: 1,
-                choice: '432',
-            },
-            {
-                id: 2,
-                choice: '651',
-            },
-            {
-                id: 3,
-                choice: '728',
-            },
-            {
-                id: 4,
-                choice: '891',
-            },
-        ],
-        choiceType: '',
-        answer: 4,
-        favorite: ''
-    },
-    {
-        p: '19. จงเปลี่ยนเลขฐานสอง 11101 ให้เป็นเลขฐานแปดว่ามีค่าเท่าไร',
+        p: '16. จงเปลี่ยนเลขฐานสอง 11101 ให้เป็นเลขฐานแปดว่ามีค่าเท่าไร',
         type: 'text',
         img: '',
         seasons: [
@@ -1022,11 +946,11 @@ export const pre2_2 = [
             },
         ],
         choiceType: 'math',
-        answer: 4,
+        answer: 1,
         favorite: ''
     },
     {
-        p: '20. จงเปลี่ยนเลขฐานสอง 10111011 ให้เป็นเลขฐานสิบหกว่ามีค่าเท่าไร',
+        p: '17. จงเปลี่ยนเลขฐานสอง 10111011 ให้เป็นเลขฐานสิบหกว่ามีค่าเท่าไร',
         type: 'text',
         img: '',
         seasons: [
@@ -1051,5 +975,88 @@ export const pre2_2 = [
         answer: 2,
         favorite: ''
     },
-
+    {
+        p: '18. จงบวกเลขฐานสอง 1101 + 1001 มีค่าเท่าไร',
+        type: 'text',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: '10110',
+            },
+            {
+                id: 2,
+                choice: '10111',
+            },
+            {
+                id: 3,
+                choice: '11100',
+            },
+            {
+                id: 4,
+                choice: '11011',
+            },
+        ],
+        choiceType: '',
+        answer: 1,
+        favorite: ''
+    },
+    {
+        p: '19. จงแปลงเลขฐานสองคือ 11011 เป็นฐานสิบได้ค่าเท่าไร',
+        type: 'text',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: ' 27 ',
+            },
+            {
+                id: 2,
+                choice: ' 26 ',
+            },
+            {
+                id: 3,
+                choice: '25 ',
+            },
+            {
+                id: 4,
+                choice: '24',
+            },
+        ],
+        choiceType: '',
+        answer: 1,
+        favorite: ''
+    },
+    {
+        p: '20. จงเปลี่ยนเลข 1213 เลขฐานแปดให้เป็นเลขฐานสิบว่ามีค่าเท่าไร',
+        type: 'text',
+        img: '',
+        seasons: [
+            {
+                id: 1,
+                choice: '432',
+            },
+            {
+                id: 2,
+                choice: '651',
+            },
+            {
+                id: 3,
+                choice: '728',
+            },
+            {
+                id: 4,
+                choice: '891',
+            },
+        ],
+        choiceType: '',
+        answer: 2,
+        favorite: ''
+    },
 ]
+
+
+
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
