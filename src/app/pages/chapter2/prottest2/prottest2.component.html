@@ -24,11 +24,10 @@
             <!-- <div>Your favorite season is: {{pre.favorite}}</div> -->
         </mat-card-content>
 
-    <mat-card-actions>
-        <button mat-button (click)="b()">LIKE</button>
-        <button mat-button (click)="c()">LOVE</button>
-    </mat-card-actions>
 </mat-card>
+
+<button *ngIf="check == '1'" class="f"  mat-raised-button color="warn" (click)="b()">Submit</button>
+
 
 <mat-card *ngIf="check == '2'" class="example-card">
     <mat-card-header>
@@ -37,10 +36,15 @@
         <mat-card-subtitle>ได้คะแนน</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-        <p>{{myData}}</p>
+        <h1>{{myData}}</h1>
     </mat-card-content>
     <mat-card-actions>
-        <button mat-button (click)="d()">LIKE</button>
-        <button mat-button (click)="e()">LOVE</button>
+
     </mat-card-actions>
+</mat-card>
+
+<mat-card *ngIf="check == '2'" style="position: fixed;right: 0;bottom: 65%;background-color: transparent;">
+    <button [routerLink]="['/direction3']"
+        style="font-size: 24px;padding: 10px;border-radius: 100px; background-color:gold;" mat-raised-button>Chapter 3
+        <mat-icon>{{'double_arrow'}}</mat-icon></button>
 </mat-card>

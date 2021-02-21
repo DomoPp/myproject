@@ -40,6 +40,7 @@ export class Pretest3Component implements OnInit {
     localStorage.setItem('checks3', '2');
     this.check = JSON.parse(localStorage.getItem('checks3') || "")
     console.log(this.check);
+    localStorage.setItem('chapter3','1')
     
     // localStorage.setItem('checks', 'B');
     // this.check = JSON.parse(localStorage.getItem('checks') || "")

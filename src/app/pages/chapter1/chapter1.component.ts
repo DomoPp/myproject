@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Chapter1Component implements OnInit {
 
+  chapter = JSON.parse(localStorage.getItem('chapter1') || "")
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+  Posttest(){
+    localStorage.setItem('chapter1','2')
   }
 
 }

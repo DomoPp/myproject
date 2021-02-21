@@ -5,3 +5,7 @@
     
   }
   
+  .example-header-image {
+    background-image: url('../../../assets/images/clipart3171114.png');
+    background-size: cover;
+  }

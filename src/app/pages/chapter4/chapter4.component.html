@@ -1,7 +1,7 @@
 <mat-card class="example-card">
     <!-- <img mat-card-image src="../../../../assets/images/เอกสารประกอบสอน-ระบบดิจิทัล-แก้ไข2/เอกสารประกอบสอน-ระบบดิจิทัล-แก้ไข2-053.png" alt="Photo"> -->
 </mat-card>
-<mat-card class="example-card">
+<mat-card *ngIf="chapter == '1'" class="example-card">
     <mat-card-content>
         <img mat-card-image src="../../../../assets/images/เอกสารประกอบสอน-ระบบดิจิทัล-แก้ไข2/เอกสารประกอบสอน-ระบบดิจิทัล-แก้ไข2-099.png" alt="Photo">
         <img mat-card-image src="../../../../assets/images/เอกสารประกอบสอน-ระบบดิจิทัล-แก้ไข2/เอกสารประกอบสอน-ระบบดิจิทัล-แก้ไข2-100.png" alt="Photo">
@@ -23,4 +23,22 @@
         <img mat-card-image src="../../../../assets/images/เอกสารประกอบสอน-ระบบดิจิทัล-แก้ไข2/เอกสารประกอบสอน-ระบบดิจิทัล-แก้ไข2-116.png" alt="Photo">
         <img mat-card-image src="../../../../assets/images/เอกสารประกอบสอน-ระบบดิจิทัล-แก้ไข2/เอกสารประกอบสอน-ระบบดิจิทัล-แก้ไข2-117.png" alt="Photo">
     </mat-card-content>
+</mat-card>
+
+<mat-card style="position: fixed;right: 0;bottom: 50%;background-color: transparent;">
+    <button [routerLink]="['/Posttest1']" style="font-size: 24px;padding: 10px;border-radius: 100px; background-color:gold;" (click)="Posttest()" mat-raised-button>Posttest<mat-icon>{{'double_arrow'}}</mat-icon></button>
+</mat-card>
+
+<mat-card *ngIf="chapter == '2'" class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>กรุณาทำแบบทดสอบหลังเรียนให้เสร็จ</mat-card-title>
+    </mat-card-header>
+</mat-card>
+
+<mat-card *ngIf="chapter == '3'" class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>กรุณาทำแบบทดสอบก่อนเรียนให้เสร็จ</mat-card-title>
+    </mat-card-header>
 </mat-card>
