@@ -38,9 +38,14 @@
     <mat-card-content>
         <h1>{{myData}}</h1>
     </mat-card-content>
-    <mat-card-actions>
 
-    </mat-card-actions>
+</mat-card>
+
+<mat-card *ngIf="check == '3'" class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>กรุณาเรียนก่อน</mat-card-title>
+    </mat-card-header>
 </mat-card>
 
 <mat-card *ngIf="check == '2'" style="position: fixed;right: 0;bottom: 65%;background-color: transparent;">

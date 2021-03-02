@@ -12,6 +12,7 @@ import { MatCardModule } from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { KatexModule } from 'ng-katex';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
 
@@ -42,6 +43,7 @@ import { Workshop7Component } from './workshop/workshop7/workshop7.component';
 import { Workshop8Component } from './workshop/workshop8/workshop8.component';
 import { AboutComponent } from './about/about.component';
 import { SetlocalstComponent } from './setlocalst/setlocalst.component';
+import { RateComponent } from './rate/rate.component';
 
 
 @NgModule({
@@ -74,6 +76,7 @@ import { SetlocalstComponent } from './setlocalst/setlocalst.component';
     Workshop8Component,
     AboutComponent,
     SetlocalstComponent,
+    RateComponent,
   ],
   imports: [
     CommonModule,
@@ -87,7 +90,8 @@ import { SetlocalstComponent } from './setlocalst/setlocalst.component';
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
-    KatexModule
+    KatexModule,
+    MatButtonToggleModule
     
   ]
 })

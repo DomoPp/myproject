@@ -27,6 +27,7 @@ import { Workshop6Component } from './workshop/workshop6/workshop6.component'
 import { Workshop7Component } from './workshop/workshop7/workshop7.component'
 import { Workshop8Component } from './workshop/workshop8/workshop8.component'
 import { SetlocalstComponent } from './setlocalst/setlocalst.component'
+import { RateComponent } from './rate/rate.component'
 
 export const PagesRoutes: Routes = [
     {
@@ -145,5 +146,9 @@ export const PagesRoutes: Routes = [
     {
       path: 'setlocalst',
       component: SetlocalstComponent
+    },
+    {
+      path: 'rate',
+      component: RateComponent
     },
 ]

@@ -12,6 +12,9 @@ export class Chapter1Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    if(this.chapter=='1'){
+      localStorage.setItem('checks1_1','1') 
+    }
   }
   Posttest(){
     localStorage.setItem('chapter1','2')

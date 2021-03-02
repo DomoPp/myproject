@@ -1,0 +1,10 @@
+.example-card {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 5%;
+  }
+  
+  .example-header-image {
+    background-image: url('../../../assets/images/about.jpg');
+    background-size: cover;
+  }
